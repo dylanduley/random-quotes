@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roll the dice for a good reminder.">
+  <title>Things to Remember</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Things to Remember</h1>
+
+    <figure class="card" aria-live="polite">
+      <blockquote id="quote-text"></blockquote>
+      <figcaption id="quote-author"></figcaption>
+    </figure>
+
+    <div class="controls">
+      <button class="dice" id="dice" type="button" aria-label="Show another quote">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="8" y="8" width="84" height="84" rx="18"/>
+          <g id="pips"></g>
+        </svg>
+      </button>
+      <button id="copy" type="button">Copy</button>
+    </div>
+  </main>
+
+  <script src="quotes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
